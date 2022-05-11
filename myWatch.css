@@ -1,0 +1,78 @@
+body{
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #101820ff;
+	margin: 0;
+	letter-spacing: 5px;
+	color: #f2aa4cff;
+}
+
+@font-face {
+  font-family: digitalFont;
+  src: url("DS-DIGII.ttf");
+}
+
+#header{
+	margin: 0;
+	padding: 10px;
+	color: white;
+	border-bottom: 1px solid orange;
+}
+p{
+	font-size: x-large;
+}
+#clockDisplay{
+	padding-top: 10px;
+	font-size: xxx-large;
+	font-family: "digitalFont";
+}
+
+#grid-container{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	overflow-wrap: all;
+	align-items: center;
+}
+
+#grid-items{
+
+}
+
+.alarmSection{
+	text-align: center;
+	color: white;
+}
+
+.stopWatchSection{
+	color: white;
+}
+
+.btn{
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	background-color: transparent;
+	color: white;
+	border: 1px solid orange;
+	width: 200px;
+}
+#alarmTime{
+	padding: 10px;
+	border: none;
+	width: 30%;
+	font-size: 20px;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+#stopWatchDisplay{
+	margin-bottom: 10px;
+	font-size: xxx-large;
+	font-family: "digitalFont";
+	color: #f2aa4cff;
+}
+
+#span1{
+	width: 80%;
+}

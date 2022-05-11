@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Watch</title>
+	<link rel="stylesheet" type="text/css" href="myWatch.css">
+</head>
+<body>
+
+	<div id="header">
+		<h1>Lost Time is Never Found Again</h1>
+		<h3>Time is Now</h3>
+	</div>
+
+	<div id="clockDisplay">
+		<div><span id="date"></span></div>
+		<div><span id="time"></span></div>
+	</div>
+
+	<div id="grid-container">
+
+		<div class="alarmSection" id="grid-items">
+			<p>Set alarm</p>
+			<div class="inputAlarm">
+				<input type="datetime-local" id="alarmTime">
+				<br>
+				<button class="btn" id="alarmButton" onclick="setAlarm(this);">Set Alarm</button>
+			</div>
+			<br>
+			<div id="alarmOptions" style="display: none;">
+				<button class="btn" onclick="snooze();">Snooze 5 Min</button>
+				<button class="btn" onclick="stopAlarm();">Stop Alarm</button>
+			</div>
+		</div>
+
+		<div  class="stopWatchSection" id="grid-items">
+			<p>Stopwatch</p>
+			<div id="stopWatchDisplay">
+				<span id="span1">00:00:00</span>
+			</div>
+			<div class="buttons">
+				<button id="startBtn" class="btn" onclick="startStop();">Start</button>
+				<button id="resetBtn" class="btn" onclick="reset();">Reset</button>
+			</div>
+		</div>
+
+	</div>
+<script type="text/javascript" src="myWatch.js"></script>
+</body>
+</html>
